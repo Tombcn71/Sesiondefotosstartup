@@ -56,9 +56,9 @@ export default function TrainModelZone() {
       // if user tries to upload more than 10 files, display a toast
       if (newFiles.length + files.length > 10) {
         toast({
-          title: "Too many images",
+          title: "Demasiadas imágenes",
           description:
-            "You can only upload up to 10 images in total. Please try again.",
+            "Sólo puedes subir hasta 10 imágenes en total. Inténtalo de nuevo.",
           duration: 5000,
         });
         return;
@@ -67,9 +67,9 @@ export default function TrainModelZone() {
       // display a toast if any duplicate files were found
       if (newFiles.length !== acceptedFiles.length) {
         toast({
-          title: "Duplicate file names",
+          title: "Nombres de archivos duplicados",
           description:
-            "Some of the files you selected were already added. They were ignored.",
+            "Algunos de los archivos que seleccionó ya estaban agregados. fueron ignorados.",
           duration: 5000,
         });
       }
@@ -80,9 +80,9 @@ export default function TrainModelZone() {
 
       if (totalSize + newSize > 4.5 * 1024 * 1024) {
         toast({
-          title: "Images exceed size limit",
+          title: "Las imágenes superan el límite de tamaño",
           description:
-            "The total combined size of the images cannot exceed 4.5MB.",
+            "El tamaño total combinado de las imágenes no puede exceder los 4,5 MB.",
           duration: 5000,
         });
         return;
@@ -91,8 +91,8 @@ export default function TrainModelZone() {
       setFiles([...files, ...newFiles]);
 
       toast({
-        title: "Images selected",
-        description: "The images were successfully selected.",
+        title: "Imágenes seleccionadas",
+        description: "Las imágenes fueron seleccionadas exitosamente.",
         duration: 5000,
       });
     },
@@ -163,9 +163,9 @@ export default function TrainModelZone() {
     }
 
     toast({
-      title: "Model queued for training",
+      title: "Modelo en cola para entrenamiento",
       description:
-        "The model was queued for training. You will receive an email when the model is ready to use.",
+        "El modelo estaba en cola para recibir entrenamiento. Recibirás un correo electrónico cuando el modelo esté listo para usar.",
       duration: 5000,
     });
 
@@ -187,20 +187,20 @@ export default function TrainModelZone() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="rounded-md flex flex-col gap-8"
-        >
+          className="rounded-md flex flex-col gap-8">
           <FormField
             control={form.control}
             name="name"
             render={({ field }) => (
               <FormItem className="w-full rounded-md">
-                <FormLabel>Name</FormLabel>
+                <FormLabel>Nombre</FormLabel>
                 <FormDescription>
-                  Give your model a name so you can easily identify it later.
+                  Asigne un nombre a su modelo para que pueda identificarlo
+                  fácilmente más adelante.{" "}
                 </FormDescription>
                 <FormControl>
                   <Input
-                    placeholder="e.g. Natalie Headshots"
+                    placeholder="e.g. Natalie Sesion de fotos"
                     {...field}
                     className="max-w-screen-sm"
                     autoComplete="off"
@@ -211,9 +211,9 @@ export default function TrainModelZone() {
             )}
           />
           <div className="flex flex-col gap-4">
-            <FormLabel>Type</FormLabel>
+            <FormLabel>Typo</FormLabel>
             <FormDescription>
-              Select the type of headshots you want to generate.
+              Selecciona el tipo de retratos que deseas generar.{" "}
             </FormDescription>
             <RadioGroup
               defaultValue={modelType}
@@ -221,8 +221,7 @@ export default function TrainModelZone() {
               value={modelType}
               onValueChange={(value) => {
                 form.setValue("type", value);
-              }}
-            >
+              }}>
               <div>
                 <RadioGroupItem
                   value="man"
@@ -232,10 +231,9 @@ export default function TrainModelZone() {
                 />
                 <Label
                   htmlFor="man"
-                  className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
-                >
+                  className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary">
                   <FaMale className="mb-3 h-6 w-6" />
-                  Man
+                  Hombre
                 </Label>
               </div>
 
@@ -248,10 +246,9 @@ export default function TrainModelZone() {
                 />
                 <Label
                   htmlFor="woman"
-                  className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
-                >
+                  className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary">
                   <FaFemale className="mb-3 h-6 w-6" />
-                  Woman
+                  Mujer
                 </Label>
               </div>
               <div>
@@ -263,32 +260,31 @@ export default function TrainModelZone() {
                 />
                 <Label
                   htmlFor="person"
-                  className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary"
-                >
+                  className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary">
                   <FaRainbow className="mb-3 h-6 w-6" />
-                  Unisex
+                  Unisexo
                 </Label>
               </div>
             </RadioGroup>
           </div>
           <div
             {...getRootProps()}
-            className=" rounded-md justify-center align-middle cursor-pointer flex flex-col gap-4"
-          >
-            <FormLabel>Samples</FormLabel>
+            className=" rounded-md justify-center align-middle cursor-pointer flex flex-col gap-4">
+            <FormLabel>Muestras</FormLabel>
             <FormDescription>
-              Upload 4-10 images of the person you want to generate headshots
-              for.
+              Sube de 4 a 10 imágenes de la persona que deseas generar en la
+              cabeza. para.
             </FormDescription>
             <div className="outline-dashed outline-2 outline-gray-100 hover:outline-blue-500 w-full h-full rounded-md p-4 flex justify-center align-middle">
               <input {...getInputProps()} />
               {isDragActive ? (
-                <p className="self-center">Drop the files here ...</p>
+                <p className="self-center">Suelta los archivos aquí ...</p>
               ) : (
                 <div className="flex justify-center flex-col items-center gap-2">
                   <FaImages size={32} className="text-gray-700" />
                   <p className="self-center">
-                    Drag 'n' drop some files here, or click to select files.
+                    Arrastre y suelte algunos archivos aquí o haga clic para
+                    seleccionar archivos.{" "}
                   </p>
                 </div>
               )}
@@ -306,17 +302,20 @@ export default function TrainModelZone() {
                     variant="outline"
                     size={"sm"}
                     className="w-full"
-                    onClick={() => removeFile(file)}
-                  >
-                    Remove
+                    onClick={() => removeFile(file)}>
+                    Eliminar
                   </Button>
                 </div>
               ))}
             </div>
           )}
 
-          <Button type="submit" className="w-full" isLoading={isLoading}>
-            Train Model{" "}
+          <Button
+            type="submit"
+            className="w-full  bg-sky-600 hover:bg-sky-700
+"
+            isLoading={isLoading}>
+            Entrenar modelo{" "}
             {stripeIsConfigured && <span className="ml-1">(1 Credit)</span>}
           </Button>
         </form>

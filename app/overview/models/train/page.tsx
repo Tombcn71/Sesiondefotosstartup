@@ -15,12 +15,11 @@ export default async function Index() {
     <div className="w-full max-w-2xl mx-auto">
       <div
         id="train-model-container"
-        className="flex flex-1 flex-col gap-2 px-2"
-      >
+        className="flex flex-1 flex-col gap-2 px-2">
         <Link href="/overview" className="text-sm w-fit">
           <Button variant={"outline"}>
             <FaArrowLeft className="mr-2" />
-            Go Back
+            Atras
           </Button>
         </Link>
         <Card>

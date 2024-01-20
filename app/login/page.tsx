@@ -18,13 +18,13 @@ export default async function Login() {
       <form
         className="flex-1 flex flex-col w-full justify-center gap-2 "
         action="/auth/sign-in"
-        method="post"
-      >
+        method="post">
         <Card>
           <CardHeader>
-            <CardTitle>Log In / Sign Up</CardTitle>
+            <CardTitle>Iniciar sesión / Registrarse</CardTitle>
             <CardDescription>
-              Log into your account or sign up for a new one to get started.
+              Inicie sesión en su cuenta o regístrese para obtener una nueva
+              para comenzar.{" "}
             </CardDescription>
           </CardHeader>
           <CardContent className="grid gap-4">
@@ -37,18 +37,18 @@ export default async function Login() {
               placeholder="you@example.com"
               required
             />
-            <Button>Continue</Button>
+            <Button className="bg-sky-600 hover:bg-sky-700">Continuar</Button>
             <Messages />
           </CardContent>
           <CardFooter>
             <p className="text-sm">
-              By signing up, you agree to our{" "}
+              Al registrarte, aceptas nuestra{" "}
               <a href="#" className="underline">
-                Terms of Service
+                Términos de servicio{" "}
               </a>{" "}
-              and{" "}
+              y{" "}
               <a href="#" className="underline">
-                Privacy Policy
+                política de privacidad
               </a>
               .
             </p>

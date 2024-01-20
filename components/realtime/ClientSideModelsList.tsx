@@ -62,7 +62,9 @@ export default function ClientSideModelsList({
           <div className="flex flex-row gap-4 w-full justify-between items-center text-center">
             <h1>Tus modelos</h1>
             <Link href="/overview/models/train" className="w-fit">
-              <Button size={"sm"}>Entrenar modelo</Button>
+              <Button className="bg-sky-600 hover:bg-sky-700 lg">
+                Entrenar modelo
+              </Button>
             </Link>
           </div>
           <ModelsTable models={models} />

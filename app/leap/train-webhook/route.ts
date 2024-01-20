@@ -127,10 +127,10 @@ export async function POST(request: Request) {
       if (resendApiKey) {
         const resend = new Resend(resendApiKey);
         await resend.emails.send({
-          from: "noreply@headshots.tryleap.ai",
+          from: "noreply@sesiondefotos.ai",
           to: user?.email ?? "",
-          subject: "Your model was successfully trained!",
-          html: `<h2>We're writing to notify you that your model training was successful! 1 credit has been used from your account.</h2>`,
+          subject: "Su modelo fue entrenado exitosamente!",
+          html: `<h2>¡Le escribimos para notificarle que su capacitación modelo fue exitosa! Se ha utilizado 1 crédito de tu cuenta..</h2>`,
         });
       }
 
@@ -191,10 +191,10 @@ export async function POST(request: Request) {
       if (resendApiKey) {
         const resend = new Resend(resendApiKey);
         await resend.emails.send({
-          from: "noreply@headshots.tryleap.ai",
+          from: "noreply@sesiondefotos.ai",
           to: user?.email ?? "",
-          subject: "Your model failed to train!",
-          html: `<h2>We're writing to notify you that your model training failed!. Since this failed, you will not be billed for it</h2>`,
+          subject: "Tu modelo no pudo entrenar!",
+          html: `<h2>¡Le escribimos para notificarle que el entrenamiento de su modelo falló!. Como esto falló, no se le facturará por ello.</h2>`,
         });
       }
 

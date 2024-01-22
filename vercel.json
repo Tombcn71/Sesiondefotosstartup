@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/blog/:subdir*",
-      "destination": "https://www.telegraaf.nl:subdir*"
+      "destination": "https://blog-pi-drab.vercel.app/:subdir*"
     },
     { "source": "/(.*)", "destination": "/" }
   ]

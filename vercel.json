@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/blog/:subdir*",
-      "destination": "https://blog-pi-drab.vercel.app/:subdir*"
+      "destination": "https://sesiondefotosstartup-git-main-my-team-801094ad.vercel.app"
     },
     { "source": "/(.*)", "destination": "/" }
   ]

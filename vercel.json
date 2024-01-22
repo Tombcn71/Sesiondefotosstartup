@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    {
+      "source": "/blog/:subdir*",
+      "destination": "https://www.telegraaf.nl:subdir*"
+    },
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}

@@ -25,7 +25,7 @@
     --ring: 221.2 83.2% 53.3%;
     --radius: 0.75rem;
   }
- 
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -47,4 +47,35 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 224.3 76.3% 48%;
   }
+}
+.article {
+  @apply flex flex-col gap-3  text-lg tracking-wide mb-20;
+}
+
+.article > h1 {
+  @apply text-4xl text-center tracking-tight;
+}
+
+.article > h2 {
+  @apply text-3xl tracking-tight;
+}
+
+.article > ol {
+  @apply list-decimal flex flex-col mx-10 gap-2;
+}
+
+.article > ul {
+  @apply list-disc flex flex-col mx-10 gap-2;
+}
+
+.article > pre {
+  @apply bg-neutral-950 text-neutral-50 p-5 overflow-scroll;
+}
+
+.article > blockquote {
+  @apply pl-5 italic border-l-2 border-neutral-600 border-opacity-40;
+}
+
+.article > p > img {
+  @apply w-1/2 mx-auto;
 }

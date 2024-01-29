@@ -3,4 +3,8 @@ export type ArticleItem = {
   title: string;
   date: string;
   category: string;
+  excerpt: string;
+  coverImage: string;
+  author: string;
+  ogImage: string;
 };

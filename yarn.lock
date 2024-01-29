@@ -1131,6 +1131,11 @@
   resolved "https://registry.yarnpkg.com/@types/cookie/-/cookie-0.5.4.tgz#7e70a20cd695bc48d46b08c2505874cd68b760e0"
   integrity sha512-7z/eR6O859gyWIAjuvBWFzNURmf2oPBmJlfVWkwehU5nzIyjwBsTh7WMmEEV4JFnHuQ3ex4oyTvfKzcyJVDBNA==
 
+"@types/cookie@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@types/cookie/-/cookie-0.6.0.tgz#eac397f28bf1d6ae0ae081363eca2f425bedf0d5"
+  integrity sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==
+
 "@types/debug@^4.0.0":
   version "4.1.12"
   resolved "https://registry.yarnpkg.com/@types/debug/-/debug-4.1.12.tgz#a155f21690871953410df4b6b6f53187f0500917"
@@ -1149,6 +1154,11 @@
   integrity sha512-FRB5KNIYgCLDvw/ho7daBVqdQRG9Ptk1tMlZ2B5ibAjxDfXFkO6fJaP+ojmS8ljqmnC5If9u24WdWcVPaN3thg==
   dependencies:
     "@types/node" "*"
+
+"@types/gtag.js@^0.0.18":
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/@types/gtag.js/-/gtag.js-0.0.18.tgz#d6bc7cb1acc64ff4f4e4be918d401c53fe9ccf20"
+  integrity sha512-GJxnIvuXuVhKaHfsOdzGipoOoXq72y3mdcncc9h6i6E7nlz89zBEj2wrLM7bqO5Xk9Lm2B94MwdQsSwRlaPSWw==
 
 "@types/hast@^3.0.0":
   version "3.0.3"
@@ -1214,6 +1224,11 @@
   version "20.3.1"
   resolved "https://registry.npmjs.org/@types/node/-/node-20.3.1.tgz"
   integrity sha512-EhcH/wvidPy1WeML3TtYFGR83UzjxeWRen9V402T8aUGYsCHOmfoisV3ZSg03gAFIbLq8TnWOJ0f4cALtnSEUg==
+
+"@types/node@^16.10.2":
+  version "16.18.76"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.18.76.tgz#deecdf6b71b9ef45ceda63fec7220ddf2354d7a1"
+  integrity sha512-/GsO2uv1Z6R42lBr59dtem56gVF/yHKQaScggwU+gLU6DXE25sDmOar4c4IfWb3h+X/7OYZznPOFk7oGF3jQSA==
 
 "@types/phoenix@^1.5.4":
   version "1.6.1"
@@ -1723,7 +1738,7 @@ class-variance-authority@^0.7.0:
   dependencies:
     clsx "2.0.0"
 
-client-only@0.0.1:
+client-only@0.0.1, client-only@^0.0.1:
   version "0.0.1"
   resolved "https://registry.npmjs.org/client-only/-/client-only-0.0.1.tgz"
   integrity sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==
@@ -1829,6 +1844,20 @@ cookie@^0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.5.0.tgz#d1f5d71adec6558c58f389987c366aa47e994f8b"
   integrity sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw==
+
+cookie@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.6.0.tgz#2798b04b071b0ecbff0dbb62a505a8efa4e19051"
+  integrity sha512-U71cyTamuh1CRNCfpGY6to28lxvNwPG4Guz/EVjgf3Jmzv0vlDp1atT9eS5dDjMYHucpHbWns6Lwf3BKz6svdw==
+
+cookies-next@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/cookies-next/-/cookies-next-4.1.1.tgz#54498efe867bb5c1a47b5a99a7ea8563601c2413"
+  integrity sha512-20QaN0iQSz87Os0BhNg9M71eM++gylT3N5szTlhq2rK6QvXn1FYGPB4eAgU4qFTunbQKhD35zfQ95ZWgzUy3Cg==
+  dependencies:
+    "@types/cookie" "^0.6.0"
+    "@types/node" "^16.10.2"
+    cookie "^0.6.0"
 
 crisp-sdk-web@^1.0.21:
   version "1.0.21"

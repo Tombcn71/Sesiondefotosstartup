@@ -26,7 +26,7 @@ export default async function Index() {
       <div className="flex flex-col lg:flex-row items-center gap-8 p-8 max-w-6xl w-full">
         <div className="flex flex-col space-y-4 lg:w-1/2 w-full">
           <h1 className="text-5xl font-bold">
-            Tu Sesión de fotos profesionales con IA en minutos.{" "}
+            Sesión de fotos profesionales con IA en minutos.{" "}
           </h1>
           <p className="text-gray-600 text-lg">
             Eleva tu presencia en línea con fotografías en alta definición
@@ -35,7 +35,7 @@ export default async function Index() {
           </p>
           <div className="flex flex-col space-y-2">
             <Link href="/login">
-              <Button className="rounded-full bg-sky-600 hover:bg-sky-700 w-full lg:w-1/2">
+              <Button className="rounded-full text-white bg-sky-600 hover:bg-sky-700 w-full lg:w-1/2">
                 Consigue tus fotos{" "}
               </Button>
             </Link>

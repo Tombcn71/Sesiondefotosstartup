@@ -34,7 +34,7 @@ export default function PricingSection() {
             <div className="mt-10 text-center">
               <Link href="/login">
                 {" "}
-                <Button className="w-3/4 hover:bg-sky-700 bg-sky-600">
+                <Button className="w-3/4 text-white hover:bg-sky-700 bg-sky-600">
                   {option.buttonText}
                 </Button>
               </Link>

@@ -13,6 +13,7 @@ export const metadata = {
   title: "IA sesion de fotos",
   description: "Genera increíbles retratos en minutos usando IA",
 };
+export const revalidate = 0;
 
 export default function RootLayout({ children }: any) {
   return (

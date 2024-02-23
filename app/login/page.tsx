@@ -37,7 +37,9 @@ export default async function Login() {
               placeholder="you@example.com"
               required
             />
-            <Button className="bg-sky-600 hover:bg-sky-700">Continuar</Button>
+            <Button className="bg-sky-600 text-white hover:bg-sky-700">
+              Continuar
+            </Button>
             <Messages />
           </CardContent>
           <CardFooter>

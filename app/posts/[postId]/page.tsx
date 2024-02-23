@@ -2,6 +2,7 @@ import getFormattedDate from "@/lib/getFormattedDate";
 import { getSortedPostsData, getPostData } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 export function generateStaticParams() {
   const posts = getSortedPostsData();
@@ -25,6 +26,7 @@ export function generateMetadata({ params }: { params: { postId: string } }) {
 
   return {
     title: post.title,
+    cover: post.cover,
   };
 }
 
@@ -34,14 +36,25 @@ export default async function Post({ params }: { params: { postId: string } }) {
 
   if (!posts.find((post) => post.id === postId)) notFound();
 
-  const { title, date, contentHtml } = await getPostData(postId);
+  const { title, date, contentHtml, cover, excerpt } = await getPostData(
+    postId
+  );
 
   const pubDate = getFormattedDate(date);
 
   return (
-    <main className="mx-auto prose w-10/12 md:w-1/2 mt-20 flex flex-col gap-5">
-      <h1 className="text-3xl mt-4 mb-0">{title}</h1>
+    <main className="mx-auto prose px-6 md:w-1/2  flex flex-col ">
+      {" "}
+      <h1 className="text-3xl  text-center ">{title}</h1>
+      <Image
+        className="w-full"
+        src={cover}
+        width={500}
+        height={500}
+        alt="Sunset in the mountains"
+      />{" "}
       <p className="mt-0">{pubDate}</p>
+      <div>{excerpt}</div>
       <article className="prose">
         <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
         <p>

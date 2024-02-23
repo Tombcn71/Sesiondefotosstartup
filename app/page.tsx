@@ -26,16 +26,18 @@ export default async function Index() {
       <div className="flex flex-col lg:flex-row items-center gap-8 p-8 max-w-6xl w-full">
         <div className="flex flex-col space-y-4 lg:w-1/2 w-full">
           <h1 className="text-5xl font-bold">
-            Sesión de fotos profesionales con IA en minutos.{" "}
+            <br /> Retratos profesionales con IA en minutos <br />
+            Convierte tus selfies en retratos de estudio
           </h1>
-          <p className="text-gray-600 text-lg">
-            Eleva tu presencia en línea con fotografías en alta definición
-            generadas por nuestra IA. Ideal para perfiles sociales, currículums
-            y portafolios profesionales.
+          <p className="text-gray-600 text-xl">
+            ¡Olvídate de los estudios caros y a las sesiones de fotos incómodas!
+            <br />
+            Genera retratos profesionales en minutos que capturan tu
+            personalidad y te hacen destacar.
           </p>
           <div className="flex flex-col space-y-2">
             <Link href="/login">
-              <Button className="rounded-full text-white bg-sky-600 hover:bg-sky-700 w-full lg:w-1/2">
+              <Button className="rounded text-white bg-sky-600 hover:bg-sky-700 w-full lg:w-1/2">
                 Consigue tus fotos{" "}
               </Button>
             </Link>

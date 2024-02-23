@@ -11,7 +11,7 @@ export default function FAQ() {
           className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
           open>
           <summary className="max-w-3xl flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-            <h2 className="font-medium">¿Qué es sessiondefotos.ai?</h2>
+            <h2 className="font-medium">¿Cómo descargar fotos?</h2>
 
             <span className="relative h-5 w-5 shrink-0">
               <svg
@@ -45,10 +45,13 @@ export default function FAQ() {
           </summary>
 
           <p className="mt-4 leading-relaxed text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
+            Para descargar una sola imagen en el escritorio: Abre la imagen que
+            deseas descargar. Haga clic derecho en la imagen Elija "Guardar
+            imagen como..." (el texto exacto depende de su navegador)
+            <br />
+            Para descargar una sola imagen en el móvil: Abre la imagen que
+            deseas descargar. Mantenga presionada la imagen Elija "Guardar en
+            fotos..." (el texto exacto depende de su teléfono)
           </p>
         </details>
 

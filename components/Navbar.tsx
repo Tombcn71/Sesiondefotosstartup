@@ -39,19 +39,21 @@ export default async function Navbar() {
     <div className="flex w-full px-4 lg:px-40 py-4 items-center border-b text-center gap-8 justify-between">
       <div className="flex gap-2 h-full">
         <Link href="/">
-          <h2 className=" font-medium  text-2xl items-center  gap-2 flex">
+          <h2 className=" font-medium  text-2xl items-center   flex">
             <Image
-              src="/logo.png"
-              width={40}
-              height={40}
+              src="/seslogo.png"
+              width={50}
+              height={50}
               alt="Picture of the author"
             />{" "}
-            <span className="sm:block hidden">
+            <span className="mt-1 sm:block hidden">
               {" "}
-              Sesión de fotos
-              <span className="inline-flex ml-4 items-center rounded-md bg-sky-600 px-2 py-1  text-xs text-white ring-1 ring-inset ring-gray-500/10">
-                beta
-              </span>
+              <Image
+                src="/logotext.png"
+                width={180}
+                height={20}
+                alt="Picture of the author"
+              />
             </span>{" "}
           </h2>
         </Link>

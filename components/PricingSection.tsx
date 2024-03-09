@@ -4,12 +4,13 @@ import { Button } from "./ui/button";
 export default function PricingSection() {
   return (
     <div className="w-full max-w-6xl mt-16 mb-16 p-8 rounded-lg space-y-8 ">
-      <h2 id="Precios" className="text-3xl font-bold text-center mb-8">
-        Retratos profesionales en un precio asequible
+      <h2 id="Prijs" className="text-3xl max-w-6xl font-bold text-center mb-8">
+        Professionele zakelijke portetfoto's nu betaalbaar voor iedereen{" "}
       </h2>
-      <p>
-        Renueva tu LinkedIn, mejora tu currículum o actualiza el sitio web de tu
-        empresa con nuestros precios asequibles.
+      <p className="text-xl max-w-6xl  text-center mb-8">
+        Vernieuw je linkedin, update je cv, actualiseer de bedrijfswebsite of
+        laat mooie portetfotos afdrukken allemaal mogelijk met deze voor
+        iedereen betaalbare fotosessie.
       </p>
       <div className="flex flex-wrap justify-center lg:space-x-4 space-y-4 lg:space-y-0 items-stretch">
         {pricingOptions.map((option, index) => (
@@ -52,46 +53,46 @@ export default function PricingSection() {
 
 const pricingOptions = [
   {
-    title: "Individual",
+    title: "Individueel",
     price: "29€",
     description:
-      "Perfecto para personas que buscan mejorar su presencia en línea.",
+      "Perfect voor personen die hun online aanwezigheid willen verbeteren.",
     features: [
-      "1 sesión de fotos",
-      " 40 HD IA Fotografias",
-      "20+ estilos",
-      "Tiempo de respuesta de 20 minutos",
+      "1 individuele fotosessie",
+      " 32 HD AI Foto's",
+      "20+ stijlen",
+      "Klaar in 20 minuten",
     ],
-    buttonText: "Elegir",
+    buttonText: "Selecteer",
     bgColor: "bg-white",
   },
   {
-    title: "Equipos pequeños",
+    title: "Kleine teams",
     price: "59€ ",
     description:
-      "Ideal para equipos de 3 personas que buscan mejorar su presencia en línea.",
+      "Ideal voor kleine teams van 3 personen die hun online aanwezigheid willen verbeteren.",
     features: [
-      "3 sesiónes de fotos",
-      " Cada uno 40 HD IA Fotografias",
-      "20+ estilos",
-      "Tiempo de respuesta total de 60 minutos",
+      "3 individuele fotosessies",
+      " Ieder 32 HD AI Foto's",
+      "20+ stijlen",
+      "Klaar in 20 minuten",
     ],
 
-    buttonText: "Elegir ",
+    buttonText: "Selecteer ",
     bgColor: "bg-blue-50",
   },
   {
-    title: "Equipos",
+    title: "Teams",
     price: "99€",
     description:
-      "Ideal para equipos de 5 personas que buscan mejorar su presencia en línea.",
+      "Ideal voor teams van 5 personen die hun online aanwezigheid willen verbeteren.",
     features: [
-      "5 sesiónes de fotos",
-      " Cada uno 40 HD IA Fotografias",
-      "20+ estilos",
-      "Tiempo de respuesta total de 100 minutos",
+      "5 individuele fotosessies",
+      " Ieder 32 HD AI Foto's",
+      "20+ stijlen",
+      "Klaar in 20 minuten",
     ],
-    buttonText: "Elegir ",
+    buttonText: "Selecteer ",
     bgColor: "bg-white",
   },
 ];

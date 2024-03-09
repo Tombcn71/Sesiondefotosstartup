@@ -21,10 +21,9 @@ export default async function Login() {
         method="post">
         <Card>
           <CardHeader>
-            <CardTitle>Iniciar sesión / Registrarse</CardTitle>
+            <CardTitle>Inloggen / Registreren</CardTitle>
             <CardDescription>
-              Inicie sesión en su cuenta o regístrese para obtener una nueva
-              para comenzar.{" "}
+              Login of registreer om te beginnen.{" "}
             </CardDescription>
           </CardHeader>
           <CardContent className="grid gap-4">
@@ -38,19 +37,19 @@ export default async function Login() {
               required
             />
             <Button className="bg-sky-600 text-white hover:bg-sky-700">
-              Continuar
+              Verder
             </Button>
             <Messages />
           </CardContent>
           <CardFooter>
             <p className="text-sm">
-              Al registrarte, aceptas nuestra{" "}
+              Om te registreren, accepteer onze{" "}
               <a href="#" className="underline">
-                Términos de servicio{" "}
+                Terms of use{" "}
               </a>{" "}
               y{" "}
               <a href="#" className="underline">
-                política de privacidad
+                privacy policy
               </a>
               .
             </p>

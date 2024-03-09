@@ -26,30 +26,26 @@ export default async function Index() {
       <div className="flex flex-col lg:flex-row items-center gap-8 p-8 max-w-6xl w-full">
         <div className="flex flex-col space-y-4 lg:w-1/2 w-full">
           <h1 className="text-5xl font-bold">
-            <br /> Retratos profesionales con IA en minutos <br />
-            Convierte tus selfies en retratos de estudio
+            <br /> Professionele zakelijke portetfoto's in een paar minuten met
+            behulp van AI.
           </h1>
           <p className="text-gray-600 text-xl">
-            ¡Olvídate de los estudios caros y a las sesiones de fotos incómodas!
-            <br />
-            Genera retratos profesionales en minutos que capturan tu
-            personalidad y te hacen destacar.
+            Vergeet dure studio's en ongemakkelijke fotosessies! <br />
+            Genereer binnen enkele minuten professionele zakelijke portetfoto's
+            in HD studio kwaliteit die veel goedkoper zijn en geen tijd en
+            reizen in beslag nemen, makkelijk vanaf thuis of je werk.
           </p>
           <div className="flex flex-col space-y-2">
             <Link href="/login">
               <Button className="rounded text-white bg-sky-600 hover:bg-sky-700 w-full lg:w-1/2">
-                Consigue tus fotos{" "}
+                Begin met jouw fotosessie{" "}
               </Button>
             </Link>
-            <p className="text-sm text-gray-500 italic">
-              Con la confianza de profesionales de todo el mundo. Rápido y
-              eficiente.{" "}
-            </p>
           </div>
           <div className="mt-4 text-gray-500">
-            <span>¿Ya eres usuario? </span>
+            <span>Ben je al een gebruiker? </span>
             <Link className="text-blue-600 hover:underline" href="/login">
-              Iniciar sesión{" "}
+              Inloggen{" "}
             </Link>
           </div>
         </div>

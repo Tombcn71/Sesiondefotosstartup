@@ -25,7 +25,7 @@ export async function POST(request: Request) {
   }
 
   return NextResponse.redirect(
-    `${requestUrl.origin}/login?message=Check email to continue sign in process`,
+    `${requestUrl.origin}/login?message=Controleer uw e-mail om door te gaan met het aanmeldingsproces`,
     {
       // a 301 status is required to redirect from a POST to a GET route
       status: 301,

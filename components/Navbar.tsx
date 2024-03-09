@@ -36,87 +36,85 @@ export default async function Navbar() {
     .single();
 
   return (
-    <div className="flex w-full px-4 lg:px-40 py-4 items-center border-b text-center gap-8 justify-between">
-      <div className="flex gap-2 h-full">
-        <Link href="/">
-          <h2 className=" font-medium  text-2xl items-center   flex">
-            <Image
-              src="/seslogo.png"
-              width={50}
-              height={50}
-              alt="Picture of the author"
-            />{" "}
-            <span className="mt-1 sm:block hidden">
-              {" "}
-              <Image
-                src="/logotext.png"
-                width={180}
-                height={20}
-                alt="Picture of the author"
-              />
-            </span>{" "}
-          </h2>
-        </Link>
-      </div>
-      {user && (
-        <div className=" lg:flex flex-row gap-2">
-          <Link href="/overview">
-            <Button variant={"ghost"}>Inicio</Button>
+    <div className="">
+      <div className=" flex w-full px-4 lg:px-40 py-4 items-center border-b text-center gap-8 justify-between ">
+        <div className="flex gap-2 h-full ">
+          <Link href="/">
+            <h2 className=" font-medium  text-2xl items-center   flex">
+              <Image src="/seslogo.png" width={30} height={30} alt="Logo" />{" "}
+              <span className="mt-1 ml-1 sm:block hidden">
+                {" "}
+                <Image
+                  src="/textlogo.png"
+                  width={180}
+                  height={60}
+                  alt="Logo text"
+                />
+              </span>{" "}
+            </h2>
           </Link>
-          {stripeIsConfigured && (
-            <Link href="/get-credits">
-              <Button variant={"ghost"}>Obtener créditos</Button>
-            </Link>
-          )}
         </div>
-      )}
-      <div className="flex gap-4 lg:ml-auto scroll-smooth">
-        {!user && (
-          <Link scroll={true} href="/#Como funciona" className="scroll-smooth">
-            <Button variant={"ghost"}>Como funciona?</Button>
-          </Link>
-        )}
-        {!user && (
-          <Link scroll={true} href="/#Precios" className="scroll-smooth">
-            <Button variant={"ghost"}>Precios</Button>
-          </Link>
-        )}
-        {!user && (
-          <Link scroll={true} href="/#Faq" className="scroll-smooth">
-            <Button variant={"ghost"}>Faq</Button>
-          </Link>
-        )}
-        {!user && (
-          <Link href="/login">
-            <Button variant={"ghost"}>Iniciar sesion / Registrarse</Button>
-          </Link>
-        )}{" "}
+        <div></div>
         {user && (
-          <div className="flex flex-row gap-4 text-center align-middle justify-center">
+          <div className=" lg:flex flex-row gap-2 ">
+            <Link href="/overview">
+              <Button variant={"ghost"}>Home</Button>
+            </Link>
             {stripeIsConfigured && (
-              <ClientSideCredits creditsRow={credits ? credits : null} />
+              <Link href="/get-credits">
+                <Button variant={"ghost"}>Credits kopen</Button>
+              </Link>
             )}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild className="cursor-pointer">
-                <AvatarIcon height={24} width={24} className="text-sky-600" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56">
-                <DropdownMenuLabel className="text-primary text-center overflow-hidden text-ellipsis">
-                  {user.email}
-                </DropdownMenuLabel>
-                <DropdownMenuSeparator />
-                <form action="/auth/sign-out" method="post">
-                  <Button
-                    type="submit"
-                    className="w-full text-left"
-                    variant={"ghost"}>
-                    Cerrar sesión
-                  </Button>
-                </form>
-              </DropdownMenuContent>
-            </DropdownMenu>
           </div>
         )}
+        <div className="flex gap-4 lg:ml-auto scroll-smooth">
+          {!user && (
+            <Link scroll={true} href="/#Zo werkt het" className="scroll-smooth">
+              <Button variant={"ghost"}>Zo werkt het</Button>
+            </Link>
+          )}
+          {!user && (
+            <Link scroll={true} href="/#Prijs" className="scroll-smooth">
+              <Button variant={"ghost"}>Prijs</Button>
+            </Link>
+          )}
+          {!user && (
+            <Link scroll={true} href="/#Faq" className="scroll-smooth">
+              <Button variant={"ghost"}>Faq</Button>
+            </Link>
+          )}
+          {!user && (
+            <Link href="/login">
+              <Button variant={"ghost"}>Inloggen / Registreren</Button>
+            </Link>
+          )}{" "}
+          {user && (
+            <div className="flex flex-row gap-4 text-center align-middle justify-center">
+              {stripeIsConfigured && (
+                <ClientSideCredits creditsRow={credits ? credits : null} />
+              )}
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild className="cursor-pointer">
+                  <AvatarIcon height={24} width={24} className="text-sky-600" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="w-56">
+                  <DropdownMenuLabel className="text-primary text-center overflow-hidden text-ellipsis">
+                    {user.email}
+                  </DropdownMenuLabel>
+                  <DropdownMenuSeparator />
+                  <form action="/auth/sign-out" method="post">
+                    <Button
+                      type="submit"
+                      className="w-full text-left"
+                      variant={"ghost"}>
+                      Uitloggen
+                    </Button>
+                  </form>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

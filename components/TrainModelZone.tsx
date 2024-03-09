@@ -56,9 +56,9 @@ export default function TrainModelZone() {
       // if user tries to upload more than 10 files, display a toast
       if (newFiles.length + files.length > 10) {
         toast({
-          title: "Demasiadas imágenes",
+          title: "Teveel foto's",
           description:
-            "Sólo puedes subir hasta 10 imágenes en total. Inténtalo de nuevo.",
+            "Je mag maar max 10 foto's uploaden. probeer het opnieuw.",
           duration: 5000,
         });
         return;

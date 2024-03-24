@@ -42,7 +42,7 @@ export default async function Navbar() {
           <Link href="/">
             <h2 className=" font-medium  text-2xl items-center   flex">
               <Image src="/seslogo.png" width={30} height={30} alt="Logo" />{" "}
-              <span className="mt-1 ml-1 sm:block hidden">
+              <span className="mt-1 ml-1 ">
                 {" "}
                 <Image
                   src="/textlogo.png"
@@ -57,9 +57,6 @@ export default async function Navbar() {
         <div></div>
         {user && (
           <div className=" lg:flex flex-row gap-2 ">
-            <Link href="/overview">
-              <Button variant={"ghost"}>Home</Button>
-            </Link>
             {stripeIsConfigured && (
               <Link href="/get-credits">
                 <Button variant={"ghost"}>Credits kopen</Button>

@@ -35,10 +35,9 @@ export const CookieConsent = () => {
     <div className="ml-0 shadow-2xl  flex fixed bottom-4 left-1/2 w-full sm:w-3/4 md:w-1/2 lg:w-1/3 xl:w-1/3 max-w-2xl min-w-xs py-15 p-8 m-4 bg-white text-black flex flex-col items-center justify-center transform -translate-x-1/2">
       <div>
         <p>
-          Utilizamos algunos paquetes de análisis estándar para comprender el
-          comportamiento general del usuario, de modo que podamos descubrir cómo
-          mejorar nuestro contenido. Se trata de algunas cookies. ¿Estás bien
-          con esto?
+          We gebruiken een aantal standaard analysepakketten om het algemene
+          gebruikersgedrag te begrijpen, zodat we kunnen uitzoeken hoe we onze
+          inhoud kunnen verbeteren. Dit zijn enkele cookies. Vind je dit goed?
         </p>
       </div>
       <div className="flex mt-2">

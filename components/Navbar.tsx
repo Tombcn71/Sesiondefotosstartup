@@ -67,22 +67,7 @@ export default async function Navbar() {
             )}
           </div>
         )}
-        <div className="flex gap-4 lg:ml-auto scroll-smooth">
-          {!user && (
-            <Link scroll={true} href="/#Zo werkt het" className="scroll-smooth">
-              <Button variant={"ghost"}>Zo werkt het</Button>
-            </Link>
-          )}
-          {!user && (
-            <Link scroll={true} href="/#Prijs" className="scroll-smooth">
-              <Button variant={"ghost"}>Prijs</Button>
-            </Link>
-          )}
-          {!user && (
-            <Link scroll={true} href="/#Faq" className="scroll-smooth">
-              <Button variant={"ghost"}>Faq</Button>
-            </Link>
-          )}
+        <div className=" flex gap-4 lg:ml-auto scroll-smooth">
           {!user && (
             <Link href="/login">
               <Button variant={"ghost"}>Inloggen / Registreren</Button>

@@ -5,12 +5,11 @@ export default function PricingSection() {
   return (
     <div className="w-full max-w-6xl mt-16 mb-16 p-8 rounded-lg space-y-8 ">
       <h2 id="Prijs" className="text-3xl max-w-6xl font-bold text-center mb-8">
-        Professionele zakelijke portetfoto's nu betaalbaar voor iedereen{" "}
+        Professionele zakelijke portetfoto's voor iedereen{" "}
       </h2>
       <p className="text-xl max-w-6xl  text-center mb-8">
         Vernieuw je linkedin, update je cv, actualiseer de bedrijfswebsite of
-        laat mooie portetfotos afdrukken allemaal mogelijk met deze voor
-        iedereen betaalbare fotosessie.
+        laat mooie portetfotos afdrukken.
       </p>
       <div className="flex flex-wrap justify-center lg:space-x-4 space-y-4 lg:space-y-0 items-stretch">
         {pricingOptions.map((option, index) => (

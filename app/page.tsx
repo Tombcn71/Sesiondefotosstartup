@@ -22,13 +22,13 @@ export default async function Index() {
   }
 
   return (
-    <div className="flex flex-col items-center pt-16">
+    <div className="flex flex-col items-center pt-10">
       <div className="flex flex-col lg:flex-row items-center gap-8 p-8 max-w-6xl w-full">
         <div className="flex flex-col space-y-4 lg:w-1/2 w-full">
           <h1 className="text-5xl font-bold">
-            <br /> Professionele zakelijke portetfoto's in een paar minuten met
-            behulp van AI.
+            <br /> Professionele fotosessie met behulp van AI.
           </h1>
+          <p className="text-gray-600 text-xl">Vanaf 29€</p>
           <p className="text-gray-600 text-xl">
             Vergeet dure studio's en ongemakkelijke fotosessies! <br />
             Genereer binnen enkele minuten professionele zakelijke portetfoto's
@@ -58,7 +58,8 @@ export default async function Index() {
         </div>
       </div>
       <ExplainerSection />
-      <PricingSection /> <Faq />
+      <Faq />
+      <PricingSection />
     </div>
   );
 }

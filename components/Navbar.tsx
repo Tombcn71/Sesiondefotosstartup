@@ -46,8 +46,8 @@ export default async function Navbar() {
                 {" "}
                 <Image
                   src="/textlogo.png"
-                  width={180}
-                  height={60}
+                  width={130}
+                  height={50}
                   alt="Logo text"
                 />
               </span>{" "}

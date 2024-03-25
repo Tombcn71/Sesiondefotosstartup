@@ -298,9 +298,9 @@ export default function TrainModelZone() {
                   <Button
                     variant="outline"
                     size={"sm"}
-                    className="w-full"
+                    className="w-full text-white"
                     onClick={() => removeFile(file)}>
-                    Eliminar
+                    verwijderen
                   </Button>
                 </div>
               ))}
@@ -309,7 +309,7 @@ export default function TrainModelZone() {
 
           <Button
             type="submit"
-            className="w-full  bg-sky-600 hover:bg-sky-700
+            className="w-full  bg-sky-600 text-white hover:bg-sky-700
 "
             isLoading={isLoading}>
             Train model{" "}

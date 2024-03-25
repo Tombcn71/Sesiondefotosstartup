@@ -49,7 +49,7 @@ export default async function Index({ params }: { params: { id: string } }) {
         <Link href="/overview" className="text-xs w-fit">
           <Button variant={"outline"} className="text-xs" size="sm">
             <FaArrowLeft className="mr-2" />
-            Atras{" "}
+            Terug{" "}
           </Button>
         </Link>
         <div className="flex flex-row gap-2 align-middle text-center items-center pb-4">

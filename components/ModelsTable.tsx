@@ -31,10 +31,10 @@ export default async function ModelsTable({ models }: ModelsTableProps) {
       <Table className="w-full">
         <TableHeader>
           <TableRow>
-            <TableHead>Nombre</TableHead>
+            <TableHead>Naam</TableHead>
             <TableHead>Status</TableHead>
-            <TableHead>Typo</TableHead>
-            <TableHead>Muestras</TableHead>
+            <TableHead>Type</TableHead>
+            <TableHead>Samples</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>

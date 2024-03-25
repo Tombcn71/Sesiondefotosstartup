@@ -44,12 +44,12 @@ export const CookieConsent = () => {
         <button
           onClick={acceptConsent}
           className="bg-sky-600 text-white px-4 py-2 rounded mr-2">
-          Aceptar{" "}
+          Acepteren{" "}
         </button>
         <button
           onClick={declineConsent}
           className="bg-sky-600 text-white px-4 py-2 rounded">
-          Rechazar{" "}
+          Weigeren{" "}
         </button>
       </div>
     </div>

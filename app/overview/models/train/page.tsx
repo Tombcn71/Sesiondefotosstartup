@@ -24,9 +24,10 @@ export default async function Index() {
         </Link>
         <Card>
           <CardHeader>
-            <CardTitle>Entrenar Modelo</CardTitle>
+            <CardTitle>Train een model</CardTitle>
             <CardDescription>
-              Elija un nombre, escriba y cargue algunas fotos para comenzar.{" "}
+              Kies een naam, een type en upload enkele foto's om aan de slag te
+              gaan.{" "}
             </CardDescription>
           </CardHeader>
           <CardContent className="grid gap-6">

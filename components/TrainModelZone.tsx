@@ -67,9 +67,9 @@ export default function TrainModelZone() {
       // display a toast if any duplicate files were found
       if (newFiles.length !== acceptedFiles.length) {
         toast({
-          title: "Nombres de archivos duplicados",
+          title: "Dubbele bestandsnamen",
           description:
-            "Algunos de los archivos que seleccionó ya estaban agregados. fueron ignorados.",
+            "Sommige van de door u geselecteerde bestanden zijn al toegevoegd.",
           duration: 5000,
         });
       }
@@ -80,9 +80,9 @@ export default function TrainModelZone() {
 
       if (totalSize + newSize > 4.5 * 1024 * 1024) {
         toast({
-          title: "Las imágenes superan el límite de tamaño",
+          title: "Afbeeldingen overschrijden de maximale grootte",
           description:
-            "El tamaño total combinado de las imágenes no puede exceder los 4,5 MB.",
+            "De totale gecombineerde grootte van de afbeeldingen mag niet groter zijn dan 4,5 MB.",
           duration: 5000,
         });
         return;
@@ -91,8 +91,8 @@ export default function TrainModelZone() {
       setFiles([...files, ...newFiles]);
 
       toast({
-        title: "Imágenes seleccionadas",
-        description: "Las imágenes fueron seleccionadas exitosamente.",
+        title: "Geselecteerde afbeeldingen",
+        description: "Afbeeldingen zijn succesvol geselecteerd.",
         duration: 5000,
       });
     },
@@ -148,13 +148,13 @@ export default function TrainModelZone() {
         <div className="flex flex-col gap-4">
           {responseMessage}
           <a href="/get-credits">
-            <Button size="sm">Get Credits</Button>
+            <Button size="sm">Koop Credits</Button>
           </a>
         </div>
       );
       toast({
-        title: "Something went wrong!",
-        description: responseMessage.includes("Not enough credits")
+        title: "Er ging iets verkeerd!",
+        description: responseMessage.includes("Niet genoeg credits credits")
           ? messageWithButton
           : responseMessage,
         duration: 5000,
@@ -163,9 +163,9 @@ export default function TrainModelZone() {
     }
 
     toast({
-      title: "Modelo en cola para entrenamiento",
+      title: "Model in wachtrij voor training",
       description:
-        "El modelo estaba en cola para recibir entrenamiento. Recibirás un correo electrónico cuando el modelo esté listo para usar.",
+        "Het model stond in de wachtrij om training te krijgen. Je ontvangt een e-mail wanneer het model klaar is voor gebruik.",
       duration: 5000,
     });
 
@@ -193,14 +193,11 @@ export default function TrainModelZone() {
             name="name"
             render={({ field }) => (
               <FormItem className="w-full rounded-md">
-                <FormLabel>Nombre</FormLabel>
-                <FormDescription>
-                  Asigne un nombre a su modelo para que pueda identificarlo
-                  fácilmente más adelante.{" "}
-                </FormDescription>
+                <FormLabel>Naam</FormLabel>
+                <FormDescription>Geef je model een naam. </FormDescription>
                 <FormControl>
                   <Input
-                    placeholder="e.g. Natalie Sesion de fotos"
+                    placeholder="b.v Marian's Fotosessie"
                     {...field}
                     className="max-w-screen-sm"
                     autoComplete="off"
@@ -211,9 +208,9 @@ export default function TrainModelZone() {
             )}
           />
           <div className="flex flex-col gap-4">
-            <FormLabel>Typo</FormLabel>
+            <FormLabel>Type</FormLabel>
             <FormDescription>
-              Selecciona el tipo de retratos que deseas generar.{" "}
+              Selecteer type waarvoor je een portetfoto wilt genereren.{" "}
             </FormDescription>
             <RadioGroup
               defaultValue={modelType}
@@ -233,7 +230,7 @@ export default function TrainModelZone() {
                   htmlFor="man"
                   className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary">
                   <FaMale className="mb-3 h-6 w-6" />
-                  Hombre
+                  Man
                 </Label>
               </div>
 
@@ -248,7 +245,7 @@ export default function TrainModelZone() {
                   htmlFor="woman"
                   className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary">
                   <FaFemale className="mb-3 h-6 w-6" />
-                  Mujer
+                  Vrouw
                 </Label>
               </div>
               <div>
@@ -262,7 +259,7 @@ export default function TrainModelZone() {
                   htmlFor="person"
                   className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-transparent p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary">
                   <FaRainbow className="mb-3 h-6 w-6" />
-                  Unisexo
+                  Unisex
                 </Label>
               </div>
             </RadioGroup>
@@ -270,21 +267,21 @@ export default function TrainModelZone() {
           <div
             {...getRootProps()}
             className=" rounded-md justify-center align-middle cursor-pointer flex flex-col gap-4">
-            <FormLabel>Muestras</FormLabel>
+            <FormLabel>Samples</FormLabel>
             <FormDescription>
-              Sube de 4 a 10 imágenes de la persona que deseas generar en la
-              cabeza. para.
+              Upload 4 tot 10 foto's van de persoon waarvoor je de fotosessie
+              wilt doen
             </FormDescription>
             <div className="outline-dashed outline-2 outline-gray-100 hover:outline-blue-500 w-full h-full rounded-md p-4 flex justify-center align-middle">
               <input {...getInputProps()} />
               {isDragActive ? (
-                <p className="self-center">Suelta los archivos aquí ...</p>
+                <p className="self-center">Drop hier bestanden ...</p>
               ) : (
                 <div className="flex justify-center flex-col items-center gap-2">
                   <FaImages size={32} className="text-gray-700" />
                   <p className="self-center">
-                    Arrastre y suelte algunos archivos aquí o haga clic para
-                    seleccionar archivos.{" "}
+                    Sleep hier enkele bestanden naartoe, of klik op selecteer
+                    bestand.{" "}
                   </p>
                 </div>
               )}
@@ -315,7 +312,7 @@ export default function TrainModelZone() {
             className="w-full  bg-sky-600 hover:bg-sky-700
 "
             isLoading={isLoading}>
-            Entrenar modelo{" "}
+            Train model{" "}
             {stripeIsConfigured && <span className="ml-1">(1 Credit)</span>}
           </Button>
         </form>

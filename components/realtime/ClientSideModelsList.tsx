@@ -60,10 +60,10 @@ export default function ClientSideModelsList({
       {models && models.length > 0 && (
         <div className="flex flex-col gap-4">
           <div className="flex flex-row gap-4 w-full justify-between items-center text-center">
-            <h1>Tus modelos</h1>
+            <h1>Jouw modellen</h1>
             <Link href="/overview/models/train" className="w-fit">
-              <Button className="bg-sky-600 hover:bg-sky-700 lg">
-                Entrenar modelo
+              <Button className="bg-sky-600 text-white hover:bg-sky-700 lg">
+                Train model
               </Button>
             </Link>
           </div>
@@ -73,11 +73,13 @@ export default function ClientSideModelsList({
       {models && models.length === 0 && (
         <div className="flex flex-col gap-4 items-center">
           <FaImages size={64} className="text-gray-500" />
-          <h1 className="text-2xl">Comience entrenando su primer modelo. </h1>
+          <h1 className="text-2xl">
+            Begin met de traing van je eerste model.{" "}
+          </h1>
           <div>
             <Link href="/overview/models/train">
-              <Button className="bg-sky-600 hover:bg-sky-700 lg">
-                Entrenar modelo
+              <Button className="bg-sky-600 text-white  hover:bg-sky-700 lg">
+                Train model
               </Button>
             </Link>
           </div>

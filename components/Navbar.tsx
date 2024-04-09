@@ -1,6 +1,7 @@
 import { AvatarIcon } from "@radix-ui/react-icons";
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -36,7 +37,7 @@ export default async function Navbar() {
     .single();
 
   return (
-    <div className="">
+    <div>
       <div className=" flex w-full px-4 lg:px-40 py-4 items-center border-b text-center gap-8 justify-between ">
         <div className="flex gap-2 h-full ">
           <Link href="/">
@@ -54,7 +55,18 @@ export default async function Navbar() {
             </h2>
           </Link>
         </div>
-        <div></div>
+        <div className="md:block hidden lg:block hidden flex gap-4 lg:ml-auto scroll-smooth">
+          <Link href="/#Prijs">
+            <Button variant={"ghost"}>prijs</Button>
+          </Link>
+
+          <Link href="/#Faq">
+            <Button variant={"ghost"}>Faq</Button>
+          </Link>
+          <Link href="/blog">
+            <Button variant={"ghost"}>Blog</Button>
+          </Link>
+        </div>
         {user && (
           <div className=" lg:flex flex-row gap-2 ">
             {stripeIsConfigured && (

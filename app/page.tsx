@@ -26,9 +26,8 @@ export default async function Index() {
       <div className="flex flex-col lg:flex-row items-center gap-8 p-8 max-w-6xl w-full">
         <div className="flex flex-col space-y-4 lg:w-1/2 w-full">
           <h1 className="text-5xl font-bold">
-            <br /> Professionele fotosessie met behulp van AI.
+            <br /> Professionele fotosessie met behulp van AI✨
           </h1>
-          <p className="text-gray-600 text-xl">Vanaf 29€</p>
           <p className="text-gray-600 text-xl">
             Vergeet dure studio's en ongemakkelijke fotosessies! <br />
             Genereer binnen enkele minuten professionele zakelijke portetfoto's

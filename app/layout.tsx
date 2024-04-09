@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Navbar from "@/components/Navbar";
 import { CookieConsent } from "@/components/CookieConsent";
+import MobileNav from "@/components/MobileNav";
 
 const CrispWithNoSSR = dynamic(() => import("../components/crisp"));
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: any) {
             fallback={
               <div className="flex w-full px-4 lg:px-40 py-4 items-center border-b text-center gap-8 justify-between h-[69px]" />
             }>
+            {" "}
             <Navbar />
           </Suspense>
         </section>

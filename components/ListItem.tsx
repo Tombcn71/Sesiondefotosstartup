@@ -27,13 +27,13 @@ export default function ListItem({ post }: Props) {
           <p className="text-gray-700 text-base">{excerpt}</p>
           <div className="px-4 pt-4 pb-2">
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #fotografia
+              #fotografie met a.i.
             </span>
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #inteligencia artificial
+              #artificial intelligence
             </span>
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #retratos profesionales
+              #zakelijke portetfoto's
             </span>
           </div>
         </div>

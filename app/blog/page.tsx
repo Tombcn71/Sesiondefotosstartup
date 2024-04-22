@@ -6,13 +6,14 @@ export default function Home() {
     <main>
       <div className="space-y-5 px-6 max-w-4xl mx-auto text-center">
         <h1 className="text-2xl  text-gray-800 font-bold mx-auto sm:text-5xl">
-          Retratos profesionales{" "}
+          Professionele zakelijke portetfoto's{" "}
         </h1>
         <p className="max-w-l text-xl pt-5 pb-6 text-gray-500 mx-auto sm:text-m">
-          Impresiona a los reclutadores, impulsa tu marca. Obtén retratos
-          profesionales y asequibles en minutos. Sin montajes incómodos, solo
-          perfección pulida. ¡Elige www.sesiondefotos.ai para retratos
-          profesionales y domina tu presencia online!
+          Verbeter je online aanwezigheid - zonder dure studio of fotosessie!
+          Vergeet dure studio's en ongemakkelijke fotosessies! Met onze
+          innovatieve technologie creëer je in een mum van tijd professionele
+          zakelijke portretfoto's in HD-studiokwaliteit. En dat alles vanaf het
+          comfort van je eigen huis of kantoor, voor een fractie van de prijs!
         </p>
         <div className="mb-12"></div>
       </div>

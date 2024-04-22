@@ -6,7 +6,6 @@ import dynamic from "next/dynamic";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Navbar from "@/components/Navbar";
 import { CookieConsent } from "@/components/CookieConsent";
-import MobileNav from "@/components/MobileNav";
 
 const CrispWithNoSSR = dynamic(() => import("../components/crisp"));
 

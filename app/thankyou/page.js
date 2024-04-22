@@ -38,7 +38,7 @@ function page() {
           <p> Vanuit je dashboard kun je jouw fotosessie starten! </p>
           <div className="py-10 text-center">
             <a
-              href="#"
+              href="/overview"
               className="px-12 bg-sky-600  hover:bg-sky-500  text-white font-semibold py-3">
               Naar dashboard
             </a>

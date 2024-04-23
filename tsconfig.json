@@ -31,7 +31,10 @@
     "app/blog/page.jsx",
     "app/slides/page.jsx",
     "app/thankyou/layout.js",
-    "app/thankyou/page.js"
+    "app/thankyou/page.js",
+    "app/contact/page.jsx",
+    "app/contact/page.jsx",
+    "app/api/order-success/route.js"
   ],
   "exclude": ["node_modules"]
 }

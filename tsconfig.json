@@ -34,7 +34,7 @@
     "app/thankyou/page.js",
     "app/contact/page.jsx",
     "app/contact/page.jsx",
-    "app/api/order-success/route.js"
+    "app/order-succe/route.js"
   ],
   "exclude": ["node_modules"]
 }

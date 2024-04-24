@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 export default function Footer() {
   return (
@@ -24,6 +25,25 @@ export default function Footer() {
           </div>
         </Link>
       </div>
+      <div>
+        {" "}
+        <div className="  lg:ml-auto align-items: flex-end; flex justify-end">
+          <Link href="/#Prijs">
+            <Button variant={"ghost"}>Prijs</Button>
+          </Link>
+
+          <Link href="/#Faq">
+            <Button variant={"ghost"}>Faq</Button>
+          </Link>
+          <Link href="/blog">
+            <Button variant={"ghost"}>Blog</Button>
+          </Link>
+          <Link href="/contact">
+            <Button variant={"ghost"}>Contact</Button>
+          </Link>
+        </div>
+      </div>
+
       <div className="flex space-x-4 pb-4 sm:pb-0">
         <Link
           href="https://www.instagram.com/sesiondefotos.ai/"
@@ -57,9 +77,9 @@ export default function Footer() {
         </Link>
 
         <Link
-          href="https://github.com/leap-ai/headshots-starter"
+          href="https://www.linkedin.com/company/102182512/admin/feed/posts/?feedType=following"
           className="group"
-          aria-label="GitHub"
+          aria-label="Linkedin"
           target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -74,7 +74,12 @@ export default function ClientSideModelsList({
         <div className="flex flex-col gap-4 items-center">
           <FaImages size={64} className="text-gray-500" />
           <h1 className="text-2xl">
-            Begin met de training van je eerste model.{" "}
+            <li>
+              <Link href="/get-credits" className="text-sky-500">
+                Koop hier
+              </Link>
+            </li>
+            credits en begin met je AI fotosessie.{" "}
           </h1>
           <div>
             <Link href="/overview/models/train">

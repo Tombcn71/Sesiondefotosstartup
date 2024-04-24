@@ -68,11 +68,10 @@ export default async function Navbar() {
           </h2>
         </Link>
       </div>
-      <div className="md:block hidden lg:block hidden lg:ml-auto align-items: flex-end; flex justify-end">
+      <div className="md:block hidden  lg:ml-auto align-items: flex-end; flex justify-end">
         <Link href="/#Prijs">
           <Button variant={"ghost"}>Prijs</Button>
         </Link>
-
         <Link href="/#Faq">
           <Button variant={"ghost"}>Faq</Button>
         </Link>
@@ -81,7 +80,7 @@ export default async function Navbar() {
         </Link>
         <Link href="/contact">
           <Button variant={"ghost"}>Contact</Button>
-        </Link>
+        </Link>{" "}
       </div>
       {user && (
         <div className=" lg:flex flex-row gap-2 ">
@@ -94,7 +93,7 @@ export default async function Navbar() {
       )}
       <div className=" flex gap-4 lg:ml-auto scroll-smooth">
         {!user && (
-          <Link href="/login">
+          <Link href="/login" className="md:block hidden">
             <Button variant={"ghost"}>Inloggen / Registreren</Button>
           </Link>
         )}{" "}
@@ -130,38 +129,47 @@ export default async function Navbar() {
               <MenuIcon />
             </SheetTrigger>
             <div className="bg-white">
-              <SheetContent className="w-[220px] h-[300px] p-1 sm:w-[240px]">
+              <SheetContent className="w-[220px] h-[250px] p-1 text-align: leftsm:w-[240px]">
                 {" "}
                 <div className="overflow-anchor: none;">
-                  <SheetClose>
-                    <ul>
-                      <li className="flex flex-col pt-4  space-y-8  ">
-                        <Link href="/prijs">
-                          <Button variant={"ghost"} className="text-xl	">
-                            <CreditCard className="m-4" /> Prijs
-                          </Button>
-                        </Link>
-                        <Link href="/faq">
-                          <Button variant={"ghost"} className="text-xl	">
-                            <ShieldQuestion className="m-4" /> Faq
-                          </Button>
-                        </Link>
-                        <Link href="/blog">
-                          <Button variant={"ghost"} className="text-xl	">
-                            <RssIcon className="m-4 text-sky-blue-600" /> Blog
-                          </Button>
-                        </Link>{" "}
-                        <Link href="/contact">
-                          <Button variant={"ghost"} className="text-xl	">
-                            <MailIcon className="m-4 ml-10 " />
-                            Contact
-                          </Button>
-                        </Link>
-                      </li>
-                    </ul>
-                  </SheetClose>
+                  <ul>
+                    <li className="flex flex-col pt-4   ">
+                      {" "}
+                      <Link href="/prijs" className="items-cemter">
+                        <Button
+                          variant={"ghost"}
+                          className="text-l	text-align: left">
+                          Prijs
+                        </Button>
+                      </Link>
+                      <Link href="/faq">
+                        <Button variant={"ghost"} className="text-l	">
+                          Faq
+                        </Button>
+                      </Link>
+                      <Link href="/blog">
+                        <Button variant={"ghost"} className="text-l	">
+                          Blog
+                        </Button>
+                      </Link>{" "}
+                      <Link href="/contact">
+                        <Button variant={"ghost"} className="text-l	">
+                          Contact
+                        </Button>{" "}
+                      </Link>{" "}
+                      <SheetClose asChild>
+                        {!user && (
+                          <Link href="/login" className="pl-4 pt-4">
+                            <Button className="bg-sky-600 hover:bg-sky-700 pl-4">
+                              Inloggen / Registreren
+                            </Button>
+                          </Link>
+                        )}
+                      </SheetClose>
+                    </li>
+                  </ul>
                 </div>{" "}
-              </SheetContent>
+              </SheetContent>{" "}
             </div>
           </div>
         </Sheet>

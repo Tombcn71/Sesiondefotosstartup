@@ -3,11 +3,10 @@ import React from "react";
 function Header() {
   return (
     <div className="prose item-center text-center">
-      <h1>Retratos profesionales</h1>Retratos profesionales con IA: Impresiona a
-      los reclutadores, impulsa tu marca. Obtén retratos profesionales y
-      asequibles en minutos. Sin montajes incómodos, solo perfección pulida.
-      ¡Elige Sesióndefotos.ai para retratos con IA y domina tu presencia online!
-      #IA #retratos #desarrollo profesional
+      <h1>👋 Hallo fijn dat je er bent!</h1>
+      <br />
+      Vul je email in om te beginnen wij sturen je een magic link waarmee je
+      kunt inloggen.
     </div>
   );
 }

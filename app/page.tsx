@@ -57,8 +57,7 @@ export default async function Index() {
         </div>
       </div>
       <ExplainerSection />
-      <Faq />
-      <PricingSection />
+      <PricingSection /> <Faq />
     </div>
   );
 }

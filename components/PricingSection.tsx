@@ -4,12 +4,15 @@ import { Button } from "./ui/button";
 export default function PricingSection() {
   return (
     <div className="w-full max-w-6xl mt-16 mb-16 p-8 rounded-lg space-y-8 ">
-      <h2 id="Prijs" className="text-3xl max-w-6xl font-bold text-center mb-8">
-        Professionele zakelijke portetfoto's voor iedereen{" "}
+      <h2 id="Prijs" className="text-6xl max-w-6xl font-bold text-center mb-8">
+        🎉Profiteer van onze tijdelijke{" "}
+        <span className="text-sky-600 ">launchkorting</span>{" "}
       </h2>
       <p className="text-xl max-w-6xl  text-center mb-8">
-        Vernieuw je linkedin, update je cv, actualiseer de bedrijfswebsite of
-        laat mooie portetfotos afdrukken.
+        Zakelijke portetfoto's voor iedereen! <br />
+        Vernieuw je linkedin, boost je sollicitatie kansen of upgrade je
+        bedrijfswebsite. <br /> met onze tijdelijk verlaagde ai fotosessie prijs
+        plannen.
       </p>
       <div className="flex flex-wrap justify-center lg:space-x-4 space-y-4 lg:space-y-0 items-stretch">
         {pricingOptions.map((option, index) => (
@@ -20,7 +23,10 @@ export default function PricingSection() {
               <h3 className="text-2xl font-semibold text-center">
                 {option.title}
               </h3>
-              <p className="text-5xl font-bold text-center mb-2">
+              <p className="text-3xl text-gray-400 font-bold line-through text-center mb-2">
+                {option.price1}
+              </p>{" "}
+              <p className="text-6xl font-extrabold text-center mb-2">
                 {option.price}
               </p>
               <p className="text-sm text-gray-600 text-center">
@@ -53,7 +59,8 @@ export default function PricingSection() {
 const pricingOptions = [
   {
     title: "Individueel",
-    price: "29€",
+    price1: "39€",
+    price: "25€",
     description:
       "Perfect voor personen die hun online aanwezigheid willen verbeteren.",
     features: [
@@ -67,7 +74,8 @@ const pricingOptions = [
   },
   {
     title: "Kleine teams",
-    price: "59€ ",
+    price1: "79€ ",
+    price: "55€ ",
     description:
       "Ideal voor kleine teams van 3 personen die hun online aanwezigheid willen verbeteren.",
     features: [
@@ -82,7 +90,8 @@ const pricingOptions = [
   },
   {
     title: "Teams",
-    price: "99€",
+    price1: "129€",
+    price: "95€",
     description:
       "Ideal voor teams van 5 personen die hun online aanwezigheid willen verbeteren.",
     features: [

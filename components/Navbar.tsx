@@ -83,7 +83,7 @@ export default async function Navbar() {
         </Link>{" "}
       </div>
       {user && (
-        <div className=" lg:flex flex-row gap-2 ">
+        <div className=" flex flex-row lg:ml-auto  gap-2 ">
           {stripeIsConfigured && (
             <Link href="/get-credits">
               <Button variant={"ghost"}>Credits kopen</Button>

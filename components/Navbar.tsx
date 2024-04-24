@@ -55,7 +55,7 @@ export default async function Navbar() {
       <div className="flex gap-2 h-full ">
         <Link href="/">
           <h2 className=" font-medium  text-2xl items-center   flex">
-            <Image src="/logo1.png" width={30} height={30} alt="Logo" />{" "}
+            <Image src="/seslogo.png" width={30} height={30} alt="Logo" />{" "}
             <span className="mt-1 ml-1 ">
               {" "}
               <Image

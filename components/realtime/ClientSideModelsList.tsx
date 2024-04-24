@@ -76,7 +76,7 @@ export default function ClientSideModelsList({
           <span>
             <h1 className="text-2xl">
               <Link href="/get-credits" className="text-sky-500">
-                Koop hier
+                👉 Koop hier
               </Link>
               credits en begin met je AI fotosessie.{" "}
             </h1>

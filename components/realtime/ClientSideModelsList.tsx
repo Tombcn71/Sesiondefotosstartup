@@ -73,14 +73,14 @@ export default function ClientSideModelsList({
       {models && models.length === 0 && (
         <div className="flex flex-col gap-4 items-center">
           <FaImages size={64} className="text-gray-500" />
-          <h1 className="text-2xl">
-            <li>
+          <span>
+            <h1 className="text-2xl">
               <Link href="/get-credits" className="text-sky-500">
                 Koop hier
               </Link>
-            </li>
-            credits en begin met je AI fotosessie.{" "}
-          </h1>
+              credits en begin met je AI fotosessie.{" "}
+            </h1>
+          </span>
           <div>
             <Link href="/overview/models/train">
               <Button className="bg-sky-600 text-white  hover:bg-sky-700 lg">

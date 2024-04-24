@@ -75,9 +75,11 @@ export default function ClientSideModelsList({
           <FaImages size={64} className="text-gray-500" />
           <span>
             <h1 className="text-2xl">
-              <Link href="/get-credits" className="text-sky-500">
+              <Link
+                href="/get-credits"
+                className="text-sky-500 hover:text-sky-600 ">
                 👉 Koop hier
-              </Link>
+              </Link>{" "}
               credits en begin met je AI fotosessie.{" "}
             </h1>
           </span>

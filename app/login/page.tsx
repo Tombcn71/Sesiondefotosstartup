@@ -17,8 +17,10 @@ export default async function Login() {
     <div className="flex-1 flex flex-col w-full px-8 sm:max-w-md justify-center gap-2">
       <div className="prose item-center text-center">
         <h1>👋 Hallo fijn dat je er bent!</h1>
-        Vul je email in om te beginnen en wij sturen je een ✨magic link✨ naar
-        je email waarmee je kunt inloggen.
+        <div>
+          Vul je email in om te beginnen en wij mailen je een ✨magic link✨
+          waarmee je kunt inloggen.
+        </div>
       </div>
       <form
         className="flex-1 flex flex-col w-full justify-center gap-2 "

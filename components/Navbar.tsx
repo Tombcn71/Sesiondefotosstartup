@@ -94,7 +94,9 @@ export default async function Navbar() {
       <div className=" flex gap-4 lg:ml-auto scroll-smooth">
         {!user && (
           <Link href="/login" className="md:block hidden">
-            <Button variant={"ghost"}>Inloggen / Registreren</Button>
+            <Button className="text-white bg-sky-600 hover:bg-sky-700 w-full border rounded-full">
+              Inloggen / Registreren
+            </Button>
           </Link>
         )}{" "}
         {user && (

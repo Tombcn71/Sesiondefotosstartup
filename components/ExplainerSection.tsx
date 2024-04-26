@@ -18,8 +18,9 @@ export default function ExplainerSection() {
           <h3 className="text-2xl font-semibold">Upload je selfies</h3>
         </div>
         <p className="text-l text-gray-600 text-center">
-          Upload 4+ selfies van hoge kwaliteit: kijk recht in de camera, zorg
-          dat je gezicht in het midden van de foto is vermijd hoeden en brillen.
+          kijk recht in de camera, zorg dat je gezicht in het midden van de foto
+          is <br />
+          vermijd hoeden en zonnebrillen.
         </p>
         <img
           src={voorbeeld.src}
@@ -37,7 +38,7 @@ export default function ExplainerSection() {
           <h3 className="text-2xl font-semibold">Onze AI gaat aan het werk</h3>
         </div>
         <p className="text-l text-gray-600 text-center">
-          De AI is 20 minuten bezig wanneer het afgerond is ontvang je een
+          De AI is 15 minuten bezig wanneer het afgerond is ontvang je een
           mailtje{" "}
         </p>
         <img
@@ -54,12 +55,12 @@ export default function ExplainerSection() {
             3
           </div>
           <h3 className="text-2xl font-semibold">
-            Nu heb je jouw geweldige foto's
+            Selecteer je portretfoto's{" "}
           </h3>
         </div>
         <p className="text-l text-gray-600 text-center">
-          Zodra onze AI klaar is met de model traing ontvang jij jouw geweldige
-          foto's{" "}
+          Je ontvangt verschillende achtergronden, poses en stijlen <br /> om de
+          perfecte AI-portretfoto te kiezen.
         </p>
         <img
           src={resultaat.src}

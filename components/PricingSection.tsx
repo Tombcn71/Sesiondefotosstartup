@@ -44,7 +44,7 @@ export default function PricingSection() {
             <div className="mt-10 text-center">
               <Link href="/login">
                 {" "}
-                <Button className="w-3/4 text-white hover:bg-sky-700 bg-sky-600">
+                <Button className="border rounded-full  h-12 px-6 m-2 text-lg text-white hover:bg-sky-700 bg-sky-600">
                   {option.buttonText}
                 </Button>
               </Link>
@@ -69,7 +69,7 @@ const pricingOptions = [
       "20+ stijlen",
       "Klaar in 20 minuten",
     ],
-    buttonText: "Selecteer",
+    buttonText: "Koop fotosessie ",
     bgColor: "bg-white",
   },
   {
@@ -85,7 +85,7 @@ const pricingOptions = [
       "Klaar in 20 minuten",
     ],
 
-    buttonText: "Selecteer ",
+    buttonText: "Koop fotosessie ",
     bgColor: "bg-blue-50",
   },
   {
@@ -100,7 +100,7 @@ const pricingOptions = [
       "20+ stijlen",
       "Klaar in 20 minuten",
     ],
-    buttonText: "Selecteer ",
+    buttonText: "Koop fotosessie  ",
     bgColor: "bg-white",
   },
 ];

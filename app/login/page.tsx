@@ -19,7 +19,8 @@ export default async function Login() {
         <h1>👋 Hallo fijn dat je er bent!</h1>
         <div>
           Vul je email in om te beginnen en wij mailen je een ✨magic link✨
-          waarmee je kunt inloggen.
+          waarmee je kunt inloggen. <br />
+          Hierna kun je credits kopen en je fotosessie beginnen.
         </div>
       </div>
       <form
@@ -43,7 +44,7 @@ export default async function Login() {
               placeholder="you@example.com"
               required
             />
-            <Button className="bg-sky-600 text-white hover:bg-sky-700">
+            <Button className="bg-sky-600 border rounded-full  h-12 px-6 m-2 text-lg text-white hover:bg-sky-700">
               Verder
             </Button>
             <Messages />

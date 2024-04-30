@@ -128,7 +128,7 @@ export default async function Navbar() {
         <Sheet>
           <div className="bg-white md:hidden ">
             <SheetTrigger>
-              <MenuIcon />
+              <MenuIcon className="mr-2 mt-3" />
             </SheetTrigger>
             <div className="bg-white">
               <SheetContent className="w-[220px] h-[250px] p-1 text-align: leftsm:w-[240px]">

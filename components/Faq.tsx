@@ -96,7 +96,7 @@ export default function FAQ() {
             Mogelijk vindt je tussen je resultaten een onverwacht kapsel of een
             vreemde uitdrukking. Waar een professionele fotograaf vaak 1 goede
             portretfoto foto opleverd, kunt je bij ons 3 tot 6 geweldige
-            profielwaardige portretfoto's van je bestelling verwachten, maar we
+            profielwaardige portretfoto's van je fotosessie verwachten, maar we
             laten je de hele shoot van 32 stuks zien, zodat je zelf kunt
             beslissen welke je wilt gebruiken.
           </p>
@@ -185,9 +185,9 @@ export default function FAQ() {
 
           <p className="mt-4 leading-relaxed text-gray-700">
             Nee, je hoeft geen professionele kleding te dragen op de foto's die
-            je uploadt. Onze AI maakt automatisch uw portretfoto's met
+            je upload. Onze AI maakt automatisch uw portretfoto's met
             professionele kleding zoals pakken, blazers en overhemden, je mag in
-            edere outfit die je wilt de selfies maken.
+            iedere outfit die je wilt de selfies maken.
           </p>
         </details>
         <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
@@ -311,11 +311,10 @@ export default function FAQ() {
           </summary>
 
           <p className="mt-4 leading-relaxed text-gray-700">
-            Dit geldt vooral voor vrouwen. Als de foto's die je uploadt allemaal
-            make-up bevatten, zullen jouw door AI gegenereerde portretfoto's ook
-            make-up bevatten. Het AI-model gebruikt de informatie die je in jouw
-            eerste afbeeldingen opgeeft, dus als de meeste of al deze
-            afbeeldingen make-up bevatten, heeft jouw AI-model ook make-up.
+            Als de foto's die je uploadt allemaal make-up bevatten, zullen jouw
+            door AI gegenereerde portretfoto's ook make-up bevatten. Het
+            AI-model gebruikt de informatie die je in jouw eerste afbeeldingen
+            opgeeft.
           </p>
         </details>
         <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
@@ -363,7 +362,7 @@ export default function FAQ() {
         </details>
         <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
-            <h2 className="font-medium">Zijn mijn foto's privé?</h2>
+            <h2 className="font-medium">wat gebeurt er met mijn foto's?</h2>
 
             <span className="relative h-5 w-5 shrink-0">
               <svg
@@ -397,7 +396,8 @@ export default function FAQ() {
           </summary>
 
           <p className="mt-4 leading-relaxed text-gray-700">
-            Ja, jouw AI-model wordt na 30 dagen automatisch verwijderd.
+            Jouw foto's worden automatisch na 30 dagen verwijderd na 30 dagen
+            automatisch verwijderd.
           </p>
         </details>
         <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
@@ -436,8 +436,9 @@ export default function FAQ() {
           </summary>
 
           <p className="mt-4 leading-relaxed text-gray-700">
-            Ja, we gebruiken Stripe voor betalingsverwerking. We slaan geen van
-            jouw betalingsgegevens gegevens op onze servers op.
+            Ja, we gebruiken Stripe voor betalingsverwerking,je kunt vertrouwd
+            met ideal betalen We slaan geen van jouw betalingsgegevens gegevens
+            op onze servers op.
           </p>
         </details>
         <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
@@ -478,9 +479,9 @@ export default function FAQ() {
           </summary>
 
           <p className="mt-4 leading-relaxed text-gray-700">
-            Dit kan via de livechat op deze website, wanneer we niet direct
-            kunnen antwoorden reageren we via e-mail via het emailadres wat je
-            hebt opgegeven bij de live chat.
+            Dit kan via het contact formulier op deze website, voor urgente
+            vragen gebruik de livechat deze herken je aan het spraaak icoon
+            rechtsonder in het scherm.
           </p>
         </details>
       </div>

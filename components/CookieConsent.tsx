@@ -36,8 +36,8 @@ export const CookieConsent = () => {
       <div>
         <p>
           We gebruiken een aantal standaard analysepakketten om het algemene
-          gebruikersgedrag te begrijpen, zodat we kunnen uitzoeken hoe we onze
-          inhoud kunnen verbeteren. Dit zijn enkele cookies. Vind je dit goed?
+          gebruikersgedrag te begrijpen. Dit zijn enkele cookies. Vind je dit
+          goed?
         </p>
       </div>
       <div className="flex mt-2">

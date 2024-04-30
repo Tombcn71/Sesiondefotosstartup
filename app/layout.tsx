@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Navbar from "@/components/Navbar";
 import { CookieConsent } from "@/components/CookieConsent";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const CrispWithNoSSR = dynamic(() => import("../components/crisp"));
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: any) {
   return (
     <html lang="en">
       {" "}
+      <GoogleAnalytics gaId="G-HRZWXLJH94" />
       <SpeedInsights />
       <CrispWithNoSSR />
       <body className="min-h-screen flex flex-col">

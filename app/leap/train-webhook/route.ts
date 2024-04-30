@@ -130,7 +130,7 @@ export async function POST(request: Request) {
           from: "noreply@fotosessie.ai",
           to: user?.email ?? "",
           subject: "De training van jouw a.i model is succesvol verlopen!",
-          html: `<h2>We schrijven je om u te laten weten dat je modeltraining succesvol was! Er is 1 credit van je account gebruikt..</h2>`,
+          html: `<h2>We schrijven je om u te laten weten dat je a.i. training succesvol was! Er is 1 credit van je account gebruikt..</h2>`,
         });
       }
 

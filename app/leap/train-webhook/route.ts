@@ -127,10 +127,10 @@ export async function POST(request: Request) {
       if (resendApiKey) {
         const resend = new Resend(resendApiKey);
         await resend.emails.send({
-          from: "noreply@sesiondefotos.ai",
+          from: "noreply@fotosessie.ai",
           to: user?.email ?? "",
-          subject: "Su modelo fue entrenado exitosamente!",
-          html: `<h2>¡Le escribimos para notificarle que su capacitación modelo fue exitosa! Se ha utilizado 1 crédito de tu cuenta..</h2>`,
+          subject: "De training van jouw a.i model is succesvol verlopen!",
+          html: `<h2>We schrijven je om u te laten weten dat je modeltraining succesvol was! Er is 1 credit van je account gebruikt..</h2>`,
         });
       }
 
@@ -191,10 +191,10 @@ export async function POST(request: Request) {
       if (resendApiKey) {
         const resend = new Resend(resendApiKey);
         await resend.emails.send({
-          from: "noreply@sesiondefotos.ai",
+          from: "noreply@fotosessie.ai",
           to: user?.email ?? "",
-          subject: "Tu modelo no pudo entrenar!",
-          html: `<h2>¡Le escribimos para notificarle que el entrenamiento de su modelo falló!. Como esto falló, no se le facturará por ello.</h2>`,
+          subject: "De traing van je a.i model is mislukt!",
+          html: `<h2>We schrijven je om je te laten weten dat jouw a.i training is mislukt er worden er geen kosten in rekening gebracht.</h2>`,
         });
       }
 

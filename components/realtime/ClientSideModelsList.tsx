@@ -63,7 +63,7 @@ export default function ClientSideModelsList({
             <h1>Jouw fotosessies</h1>
             <Link href="/overview/models/train" className="w-fit">
               <Button className="bg-sky-600 text-white hover:bg-sky-700 lg">
-                Train model
+                Begin fotosessie
               </Button>
             </Link>
           </div>

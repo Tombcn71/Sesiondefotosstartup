@@ -194,7 +194,7 @@ export default function TrainModelZone() {
             render={({ field }) => (
               <FormItem className="w-full rounded-md">
                 <FormLabel>Naam</FormLabel>
-                <FormDescription>Geef je model een naam. </FormDescription>
+                <FormDescription>Geef je fotosessie een naam. </FormDescription>
                 <FormControl>
                   <Input
                     placeholder="b.v Marian's Fotosessie"
@@ -312,7 +312,7 @@ export default function TrainModelZone() {
             className="w-full  bg-sky-600 text-white hover:bg-sky-700
 "
             isLoading={isLoading}>
-            Train model{" "}
+            Begin een fotosessie{" "}
             {stripeIsConfigured && <span className="ml-1">(1 Credit)</span>}
           </Button>
         </form>

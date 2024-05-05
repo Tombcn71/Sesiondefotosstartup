@@ -210,7 +210,7 @@ export default function TrainModelZone() {
           <div className="flex flex-col gap-4">
             <FormLabel>Type</FormLabel>
             <FormDescription>
-              Selecteer type waarvoor je een portetfoto wilt genereren.{" "}
+              Selecteer type waarvoor je een fotosessie wilt starten.{" "}
             </FormDescription>
             <RadioGroup
               defaultValue={modelType}
@@ -312,7 +312,7 @@ export default function TrainModelZone() {
             className="w-full  bg-sky-600 text-white hover:bg-sky-700
 "
             isLoading={isLoading}>
-            Begin een fotosessie{" "}
+            Begin fotosessie{" "}
             {stripeIsConfigured && <span className="ml-1">(1 Credit)</span>}
           </Button>
         </form>

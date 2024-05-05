@@ -24,7 +24,7 @@ export default async function Index() {
         </Link>
         <Card>
           <CardHeader>
-            <CardTitle>Train een model</CardTitle>
+            <CardTitle>Begin jouw fotosessie</CardTitle>
             <CardDescription>
               Kies een naam, een type en upload enkele foto's om aan de slag te
               gaan.{" "}

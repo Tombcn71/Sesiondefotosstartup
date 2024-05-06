@@ -18,9 +18,20 @@ export const metadata = {
 export const revalidate = 0;
 
 export default function RootLayout({ children }: any) {
+  function generateReference(): any {
+    throw new Error("Function not implemented.");
+  }
+
   return (
     <html lang="en">
       {" "}
+      <script
+        type="text/javascript"
+        src="https://app.paypro.nl/pat/pat.js"
+        data-campaign-id="24939"
+        data-order-amount="AMOUNT_HERE" // Required when using variable commission
+        data-reference="REFERENCE_HERE" // Optional, but can be useful for administration purposes, or avoid duplicate conversions
+      ></script>
       <GoogleAnalytics gaId="G-HRZWXLJH94" />
       <SpeedInsights />
       <CrispWithNoSSR />

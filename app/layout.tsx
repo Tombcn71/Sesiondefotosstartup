@@ -18,10 +18,6 @@ export const metadata = {
 export const revalidate = 0;
 
 export default function RootLayout({ children }: any) {
-  function generateReference(): any {
-    throw new Error("Function not implemented.");
-  }
-
   return (
     <html lang="en">
       {" "}

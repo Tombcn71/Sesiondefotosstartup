@@ -7,7 +7,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Navbar from "@/components/Navbar";
 import { CookieConsent } from "@/components/CookieConsent";
 import { GoogleAnalytics } from "@next/third-parties/google";
-
+import Script from "next/script";
 const CrispWithNoSSR = dynamic(() => import("../components/crisp"));
 
 export const metadata = {
@@ -21,13 +21,13 @@ export default function RootLayout({ children }: any) {
   return (
     <html lang="en">
       {" "}
-      <script
+      <Script
         type="text/javascript"
         src="https://app.paypro.nl/pat/pat.js"
         data-campaign-id="24939"
         data-order-amount="AMOUNT_HERE" // Required when using variable commission
         data-reference="REFERENCE_HERE" // Optional, but can be useful for administration purposes, or avoid duplicate conversions
-      ></script>
+      ></Script>
       <GoogleAnalytics gaId="G-HRZWXLJH94" />
       <SpeedInsights />
       <CrispWithNoSSR />

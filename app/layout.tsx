@@ -24,7 +24,7 @@ export default function RootLayout({ children }: any) {
       <Script
         type="text/javascript"
         src="https://app.paypro.nl/pat/pat.js"
-        data-campaign-id="24939"
+        data-campaign-id="24952"
         data-order-amount="AMOUNT_HERE" // Required when using variable commission
         data-reference="REFERENCE_HERE" // Optional, but can be useful for administration purposes, or avoid duplicate conversions
       ></Script>

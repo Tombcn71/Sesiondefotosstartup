@@ -9,11 +9,10 @@ export default function Home() {
           Professionele zakelijke portetfoto's{" "}
         </h1>
         <p className="max-w-l text-xl pt-5 pb-6 text-gray-500 mx-auto sm:text-m">
-          Verbeter je online aanwezigheid - zonder dure studio of fotosessie!
-          Vergeet dure studio's en ongemakkelijke fotosessies! Met onze
-          innovatieve technologie creëer je in een mum van tijd professionele
-          zakelijke portretfoto's in HD-studiokwaliteit. En dat alles vanaf het
-          comfort van je eigen huis of kantoor, voor een fractie van de prijs!
+          Een goed gemaakte portretfoto kan deuren openen naar nieuwe kansen,
+          jouw online aanwezigheid verbeteren en je helpen op te vallen in jouw
+          werkveld, of je nu een bedrijfseigenaar bent, een werknemer of gewoon
+          je professionele imago wilt verbeteren.
         </p>
         <div className="mb-12"></div>
       </div>

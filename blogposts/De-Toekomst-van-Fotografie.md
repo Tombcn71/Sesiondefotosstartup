@@ -1,5 +1,5 @@
 ---
-title: "De Toekomst van Fotografie: AI Headshots - Een Deepdive in de Revolutionaire Technologie
+title: "De Toekomst van Portet Fotografie: AI Headshots 
 
 "
 date: "2024-02-05"

@@ -10,9 +10,9 @@ export default function Home() {
         </h1>
         <p className="max-w-l text-xl pt-5 pb-6 text-gray-500 mx-auto sm:text-m">
           Een goed gemaakte portretfoto kan deuren openen naar nieuwe kansen,
-          jouw online aanwezigheid verbeteren en je helpen op te vallen in jouw
-          werkveld, of je nu een bedrijfseigenaar bent, een werknemer of gewoon
-          je professionele imago wilt verbeteren.
+          jouw online aanwezigheid verbeteren en je helpen optevallen in jouw
+          werkveld, of je nu een bedrijfseigenaar bent, een wernemer of gewoon
+          jeuw professionele imago wilt verbeteren.
         </p>
         <div className="mb-12"></div>
       </div>

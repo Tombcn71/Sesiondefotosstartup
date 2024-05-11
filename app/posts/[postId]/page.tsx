@@ -3,6 +3,7 @@ import { getSortedPostsData, getPostData } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import Call from "@/components/Call";
 
 export function generateStaticParams() {
   const posts = getSortedPostsData();
@@ -43,7 +44,7 @@ export default async function Post({ params }: { params: { postId: string } }) {
   const pubDate = getFormattedDate(date);
 
   return (
-    <main className="mx-auto prose px-6 md:w-1/2  flex flex-col ">
+    <main className=" w-full px-6 md:w-1/2  flex flex-col ">
       {" "}
       <h1 className="text-3xl  text-center ">{title}</h1>
       <Image
@@ -60,7 +61,11 @@ export default async function Post({ params }: { params: { postId: string } }) {
         <p>
           <Link href="/blog">← Terug naar blog</Link>
         </p>
-      </article>
+      </article>{" "}
+      <div className="w-full">
+        {" "}
+        <Call />
+      </div>
     </main>
   );
 }

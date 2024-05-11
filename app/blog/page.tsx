@@ -1,5 +1,4 @@
 import Posts from "@/components/Posts";
-import Cta from "@/components/Cta";
 
 export default function Home() {
   return (

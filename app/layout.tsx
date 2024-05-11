@@ -8,6 +8,7 @@ import Navbar from "@/components/Navbar";
 import { CookieConsent } from "@/components/CookieConsent";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
+
 const CrispWithNoSSR = dynamic(() => import("../components/crisp"));
 
 export const metadata = {

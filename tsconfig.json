@@ -35,7 +35,8 @@
     "app/contact/page.jsx",
     "app/contact/page.jsx",
     "app/order-succe/route.js",
-    "components/Slider.tsx"
+    "components/Slider.tsx",
+    "components/Footer cta.jsx"
   ],
   "exclude": ["node_modules"]
 }

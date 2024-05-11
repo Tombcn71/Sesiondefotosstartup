@@ -62,7 +62,7 @@ Gebruik je handen om een ​​punt te maken. Dit kan helpen om je boodschap ove
 Laat je handen ontspannen langs je lichaam hangen. Dit is een neutrale pose die goed werkt voor formele portretten.
 Experimenteer met verschillende handposities. Er zijn geen harde regels, dus vind wat er voor jou het beste werkt.
 
-#### Samenwerken met de fotograag
+#### Samenwerken met de fotograaf
 
 Laat de fotograaf weten wat je wilt van je foto's. Vertel hem over je stijl, je merk en je doelgroep.
 Vertrouw op de fotograaf. De fotograaf is de expert, dus vertrouw erop dat hij weet wat hij doet.

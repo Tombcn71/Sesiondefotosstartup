@@ -7,8 +7,7 @@ import hero2 from "/public/hero2.png";
 import { Button } from "@/components/ui/button";
 import ExplainerSection from "@/components/ExplainerSection";
 import PricingSection from "@/components/PricingSection";
-import { Sparkles } from "lucide-react";
-import Slider from "@/components/Slider";
+
 export const dynamic = "force-dynamic";
 
 export default async function Index() {

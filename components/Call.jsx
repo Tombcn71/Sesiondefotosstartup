@@ -8,7 +8,7 @@ function Call() {
     return (
         <div>
 
-            <div className=" text-black  border-2 w-full">
+            <div className=" text-black shadow-md  border-2 w-full">
                 <div className="grid md:grid-cols-2 gap-4 items-center md:max-h-[475px] overflow-hidden">
                     <div className="relative w-full h-full">
                         <img src="/blogcta.png" className="w-full h-full object-cover shrink-0" />

@@ -1,5 +1,5 @@
 ---
-title: "De essentiële gids voor professionele portretfoto's voor ondernemers en freelancers?
+title: "De essentiële gids voor professionele portretfoto's voor ondernemers en freelancers
 
 
 

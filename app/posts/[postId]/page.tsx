@@ -58,14 +58,14 @@ export default async function Post({ params }: { params: { postId: string } }) {
       <div>{excerpt}</div>
       <article className="prose">
         <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
-        <p>
-          <Link href="/blog">← Terug naar blog</Link>
-        </p>
       </article>{" "}
       <div className="w-full">
         {" "}
         <Call />
       </div>
+      <p className="pt-6">
+        <Link href="/blog">← Terug naar blog</Link>
+      </p>
     </main>
   );
 }

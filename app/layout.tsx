@@ -1,4 +1,4 @@
-import Footer from "@/components/Footer";
+import Footer3 from "@/components/Footer3";
 import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 import { Suspense } from "react";
@@ -12,7 +12,7 @@ import Script from "next/script";
 const CrispWithNoSSR = dynamic(() => import("../components/crisp"));
 
 export const metadata = {
-  title: "Professionele fotosessie met behulp van AI 29€ - Fotosessie.ai ",
+  title: "Professionele fotosessie met behulp van AI - Fotosessie.ai ",
   description:
     "Vergeet dure studio's en ongemakkelijke fotosessies. Makkelijk vanaf thuis of je werk. Bespaar tijd en geld.",
 };
@@ -45,7 +45,7 @@ export default function RootLayout({ children }: any) {
         <main className="flex flex-1 flex-col items-center py-16">
           {children}
         </main>
-        <Footer />
+        <Footer3 />
         <Toaster /> <CookieConsent />
       </body>
     </html>

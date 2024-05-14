@@ -1,6 +1,12 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
+export const metadata = {
+  title: "AI Portetfoto Prijzen | Betaalbare Bedrijfsoplossing | Fotosessie.ai",
+
+  description:
+    " Ontdek de betaalbare prijzen van Fotosessie.ai, de AI-app voor professionele portetfoto's voor je hele team. Bespaar op dure fotografen en creëer een consistente uitstraling. Bekijk pakketten & bespaar tijd en geld!",
+};
 export default function PricingSection() {
   return (
     <div className="w-full max-w-6xl mt-16 mb-16 p-8 rounded-lg space-y-8 ">

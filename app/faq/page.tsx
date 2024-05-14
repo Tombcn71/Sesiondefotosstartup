@@ -1,5 +1,10 @@
 import React from "react";
+export const metadata = {
+  title: "FAQ | Kan dit een echte foto shoot vervangen? | Fotosessie.ai",
 
+  description:
+    "ja de A.I. technologie die wij gebruiken heeft een professionele fotokwaliteit die niet te onderscheiden is van een foto gemaakt door een echte fotograaf",
+};
 export default function FAQ() {
   return (
     <div className=" mt-16 mb-16 ">
@@ -12,7 +17,7 @@ export default function FAQ() {
           open>
           <summary className="max-w-3xl flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
             <h2 className="font-medium">
-              Kan dit een echte foto shoot vervangen??
+              Kan dit een echte foto shoot vervangen?
             </h2>
 
             <span className="relative h-5 w-5 shrink-0">

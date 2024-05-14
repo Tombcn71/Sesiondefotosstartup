@@ -32,6 +32,10 @@ export default function RootLayout({ children }: any) {
       <GoogleAnalytics gaId="G-HRZWXLJH94" />
       <SpeedInsights />
       <CrispWithNoSSR />
+      <meta
+        name="google-site-verification"
+        content="jh1jAMCQMI42YJZ40R0idHdqX4UkWEzrV3k5dM-ZGAU"
+      />
       <body className="min-h-screen flex flex-col">
         <section>
           <Suspense

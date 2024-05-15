@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FAQ() {
   return (
-    <div className=" mt-16 mb-16 ">
+    <div className=" px-6	mt-16 mb-16 ">
       <h2 id="Faq" className="text-3xl font-bold text-center mb-8">
         Veel gestelde vragen
       </h2>

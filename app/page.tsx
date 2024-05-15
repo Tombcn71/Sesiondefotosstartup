@@ -3,7 +3,7 @@ import { cookies } from "next/headers";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import Faq from "@/components/Faq";
-import hero2 from "/public/hero2.png";
+import hero3 from "/public/hero3.png";
 import { Button } from "@/components/ui/button";
 import ExplainerSection from "@/components/ExplainerSection";
 import PricingSection from "@/components/PricingSection";
@@ -41,7 +41,7 @@ export default async function Index() {
         </div>
         <div className="lg:w-1/2 w-full mt-8 lg:mt-0">
           <img
-            src={hero2.src}
+            src={hero3.src}
             alt="AI Headshot Illustration"
             className="rounded-lg object-cover w-full h-full"
           />

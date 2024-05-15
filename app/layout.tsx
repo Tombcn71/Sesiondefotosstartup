@@ -22,7 +22,6 @@ export default function RootLayout({ children }: any) {
   return (
     <html lang="en">
       {" "}
-      <div className="[text-align:-webkit-center]">Centered Text</div>
       <Script
         type="text/javascript"
         src="https://app.paypro.nl/pat/pat.js"

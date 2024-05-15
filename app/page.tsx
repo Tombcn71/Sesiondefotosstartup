@@ -47,8 +47,6 @@ export default async function Index() {
           />
         </div>
       </div>
-      <ExplainerSection />
-      <PricingSection /> <Faq />
     </div>
   );
 }

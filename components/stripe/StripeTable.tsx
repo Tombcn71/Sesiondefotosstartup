@@ -36,15 +36,7 @@ const StripePricingTable = ({ user }: Props) => {
     };
   }, []);
 
-  return (
-    <div className="flex flex-1 flex-col w-full">
-      <stripe-pricing-table
-        pricing-table-id="prctbl_1P9ilUFHQxgFOGeCtNu1RbnG"
-        publishable-key="pk_live_51O5QeBFHQxgFOGeCAf2jRzTU8BdbX8Ec3AwOZMeJFW89IlrzHuks9iFlvITh3ZArfZnofo8kxf0tBOU9kI02aGrV00cvwBdBYb"
-        client-reference-id={user.id}
-        customer-email={user.email}></stripe-pricing-table>
-    </div>
-  );
+  return <div className="flex flex-1 flex-col w-full"></div>;
 };
 
 export default StripePricingTable;
